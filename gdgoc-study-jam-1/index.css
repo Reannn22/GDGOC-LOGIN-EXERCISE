@@ -1,0 +1,78 @@
+/* General reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #f8f9fa;
+    background: linear-gradient(135deg, #0d1117, #161b22);
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #c9d1d9;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a.active, .navbar a:hover {
+    color: #58a6ff;
+    border-bottom: 2px solid #58a6ff;
+}
+
+/* Main Content */
+.content {
+    text-align: center;
+    padding: 10vh 2rem;
+}
+
+.content h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: #58a6ff;
+    text-shadow: 0 0 10px #58a6ff, 0 0 20px #1f6feb;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #c9d1d9;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Animations */
+body {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
